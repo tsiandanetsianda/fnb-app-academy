@@ -1,34 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SuperHero App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Heroes Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>⚡ MARVEL HEROES</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <h1>Home Page</h1>
-    
-    <h2>This is a heading</h2>
-    <h3>This is a heading</h3>
-    <h4>This is a heading</h4>
-    <h5>This is a heading</h5>
-    <h6>This is a heading</h6>
-    
-    <p>Hello Everyone</p>
-    <p>This is fun!</p>
-    
-    <div class="gallery">
-        <a href="avenger-1.html"><img src="avengersImages/images/avengers_01.jpg" alt="Thor"></a>
-        <a href="avenger-2.html"><img src="avengersImages/images/avengers_02.jpg" alt="Iron Man"></a>
-        <a href="avenger-3.html"><img src="avengersImages/images/avengers_03.jpg" alt="Captain America"></a>
-        <a href="avenger-4.html"><img src="avengersImages/images/avengers_04.jpg" alt="Hulk"></a>
-        <a href="avenger-5.html"><img src="avengersImages/images/avengers_05.jpg" alt="Black Widow"></a>
-        <a href="avenger-6.html"><img src="avengersImages/images/avengers_06.jpg" alt="Hawkeye"></a>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Assemble Your Heroes</h1>
+            <p class="hero-description">Discover the extraordinary stories and powers of Earth's Mightiest Heroes</p>
+        </div>
+    </section>
+
+    <!-- Heroes Grid -->
+    <section class="heroes-section">
+        <div class="container">
+            <h2 class="section-title">Meet The Avengers</h2>
+            <div class="heroes-grid">
+                <div class="hero-card">
+                    <a href="avenger-1.html">
+                        <div class="hero-image-container">
+                            <img src="avengersImages/images/avengers_01.jpg" alt="Thor" class="hero-image">
+                            <div class="hero-overlay">
+                                <h3 class="hero-name">Thor</h3>
+                                <p class="hero-title-text">God of Thunder</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hero-card">
+                    <a href="avenger-2.html">
+                        <div class="hero-image-container">
+                            <img src="avengersImages/images/avengers_02.jpg" alt="Iron Man" class="hero-image">
+                            <div class="hero-overlay">
+                                <h3 class="hero-name">Iron Man</h3>
+                                <p class="hero-title-text">Genius Billionaire</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hero-card">
+                    <a href="avenger-3.html">
+                        <div class="hero-image-container">
+                            <img src="avengersImages/images/avengers_03.jpg" alt="Captain America" class="hero-image">
+                            <div class="hero-overlay">
+                                <h3 class="hero-name">Captain America</h3>
+                                <p class="hero-title-text">First Avenger</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hero-card">
+                    <a href="avenger-4.html">
+                        <div class="hero-image-container">
+                            <img src="avengersImages/images/avengers_04.jpg" alt="Hulk" class="hero-image">
+                            <div class="hero-overlay">
+                                <h3 class="hero-name">Hulk</h3>
+                                <p class="hero-title-text">The Incredible</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hero-card">
+                    <a href="avenger-5.html">
+                        <div class="hero-image-container">
+                            <img src="avengersImages/images/avengers_05.jpg" alt="Black Widow" class="hero-image">
+                            <div class="hero-overlay">
+                                <h3 class="hero-name">Black Widow</h3>
+                                <p class="hero-title-text">Master Spy</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hero-card">
+                    <a href="avenger-6.html">
+                        <div class="hero-image-container">
+                            <img src="avengersImages/images/avengers_06.jpg" alt="Hawkeye" class="hero-image">
+                            <div class="hero-overlay">
+                                <h3 class="hero-name">Hawkeye</h3>
+                                <p class="hero-title-text">Master Archer</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Marvel Heroes Hub. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

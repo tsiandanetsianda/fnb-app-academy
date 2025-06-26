@@ -1,35 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Thor - SuperHero App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thor - Marvel Heroes Hub</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hero-page.css">
 </head>
 <body>
-    <div id="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>⚡ MARVEL HEROES</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <h2>Thor</h2>
-    <div class="gallery">
-        <img src="avengersImages/images/avengers_01.jpg" alt="Thor">
-    </div>
-    
-    <h4>Bio</h4>
-    <p><b>Full Name:</b> Thor Odinson</p>
-    <p><b>Place Of Birth:</b> Asgard</p>
-    <p><b>Alignment:</b> Good</p>
-    <p><b>Gender:</b> Male</p>
-    <p><b>Race:</b> Asgardian</p>
-    <br>
-    
-    <h4>Power Stats</h4>
-    <p><b>Intelligence:</b> 69%</p>
-    <p><b>Strength:</b> 100%</p>
-    <p><b>Speed:</b> 92%</p>
-    <p><b>Durability:</b> 100%</p>
-    <p><b>Power:</b> 100%</p>
-    <p><b>Combat:</b> 85%</p>
+    <!-- Hero Profile -->
+    <section class="hero-profile">
+        <div class="container">
+            <div class="profile-content">
+                <div class="profile-image">
+                    <img src="avengersImages/images/avengers_01.jpg" alt="Thor">
+                    <div class="profile-badge">
+                        <span>God of Thunder</span>
+                    </div>
+                </div>
+                
+                <div class="profile-info">
+                    <h1 class="profile-name">Thor</h1>
+                    <p class="profile-subtitle">Asgardian Prince</p>
+                    
+                    <div class="bio-section">
+                        <h3>Biography</h3>
+                        <div class="bio-grid">
+                            <div class="bio-item">
+                                <strong>Full Name:</strong>
+                                <span>Thor Odinson</span>
+                            </div>
+                            <div class="bio-item">
+                                <strong>Place of Birth:</strong>
+                                <span>Asgard</span>
+                            </div>
+                            <div class="bio-item">
+                                <strong>Alignment:</strong>
+                                <span class="alignment-good">Good</span>
+                            </div>
+                            <div class="bio-item">
+                                <strong>Gender:</strong>
+                                <span>Male</span>
+                            </div>
+                            <div class="bio-item">
+                                <strong>Race:</strong>
+                                <span>Asgardian</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="powers-section">
+                        <h3>Power Statistics</h3>
+                        <div class="power-stats">
+                            <div class="stat-item">
+                                <div class="stat-label">Intelligence</div>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 69%"></div>
+                                    <span class="stat-value">69%</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Strength</div>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 100%"></div>
+                                    <span class="stat-value">100%</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Speed</div>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 92%"></div>
+                                    <span class="stat-value">92%</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Durability</div>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 100%"></div>
+                                    <span class="stat-value">100%</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Power</div>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 100%"></div>
+                                    <span class="stat-value">100%</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Combat</div>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                    <span class="stat-value">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="back-button">
+                        <a href="index.html" class="btn-back">← Back to Heroes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
