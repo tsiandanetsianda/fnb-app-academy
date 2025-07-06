@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Loading Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-image { 
+            width: 200px; 
+            height: 150px; 
+            border: 2px solid #ccc; 
+            margin: 10px; 
+            object-fit: cover;
+        }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Pine City Zoo - Image Loading Test</h1>
+    
+    <h2>Testing Animal Images:</h2>
+    <div>
+        <p>Elephant:</p>
+        <img src="images/elephant-tn.png" class="test-image" onload="this.nextSibling.innerHTML='✅ LOADED'" onerror="this.nextSibling.innerHTML='❌ FAILED'">
+        <span class="status"></span>
+    </div>
+    
+    <div>
+        <p>Giraffe:</p>
+        <img src="images/giraffe-tn.png" class="test-image" onload="this.nextSibling.innerHTML='✅ LOADED'" onerror="this.nextSibling.innerHTML='❌ FAILED'">
+        <span class="status"></span>
+    </div>
+    
+    <div>
+        <p>Lion:</p>
+        <img src="images/lion-tn.png" class="test-image" onload="this.nextSibling.innerHTML='✅ LOADED'" onerror="this.nextSibling.innerHTML='❌ FAILED'">
+        <span class="status"></span>
+    </div>
+    
+    <div>
+        <p>Map:</p>
+        <img src="images/map.png" class="test-image" onload="this.nextSibling.innerHTML='✅ LOADED'" onerror="this.nextSibling.innerHTML='❌ FAILED'">
+        <span class="status"></span>
+    </div>
+
+    <h2>Alternative Test - Using Full Path:</h2>
+    <div>
+        <p>Elephant (full path):</p>
+        <img src="./images/elephant-tn.png" class="test-image" onload="this.nextSibling.innerHTML='✅ LOADED'" onerror="this.nextSibling.innerHTML='❌ FAILED'">
+        <span class="status"></span>
+    </div>
+</body>
+</html>
